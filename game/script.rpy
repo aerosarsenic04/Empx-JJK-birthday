@@ -25,14 +25,14 @@ label help_megumi:
     "... You really thought megumi would need your help?"
     "nah, he doesn't want help anyways... he'll be fine"
     "yuji on the other hand..."
-    define megupoint = True
+    $ megupoint = True
     jump option_1
 
 label help_kugisaki:
     "Did you seriously think kugisaki would need your help?"
     "she's a pro at this stuff, she's got a whole plan for her gift, while also maximizing her time shopping around for cute stuff!"
     "better worry about someone else"
-    define kugipoint = True
+    $ kugipoint = True
     jump option_1
 label end:
     return
