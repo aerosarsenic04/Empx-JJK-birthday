@@ -1,6 +1,9 @@
-﻿define e = Character("Eileen")
+﻿define e = Character("Mook")
 define kugipoint = False
 define megupoint = False
+
+
+
 label start:
     $ megupoint = False
     $ kugipoint = False
@@ -20,10 +23,24 @@ menu option_1:
 
 label help_yuji:
     "he's helpless"
+    "he might be a great and thoughtful guy, but he sure is indecisive."
+    "mind gving him a hand? (you have no choice)"
 
+yu "Hey, thanks for helping me out! I can't really decide what to get gojo-sensei"
+yu "Huh? Why don't Kugisaki and Fushiguro help? They already know what to get and I want to get something unique!"
+yu "I was thinking of heading to Ginza to check stuff out!"
+yu "And maybe we can finish up at takeshita street"
+yu "You know, harajuku!"
+
+yu "oh, looks like we only have a few hours left... the party starts at 6"
+yu "let's get going!"
+yu "Oh, by the way, I only have ¥15,000 to spend..."
+
+    "You head to Ginza via subway"
 label help_megumi:
     "... You really thought megumi would need your help?"
     "nah, he doesn't want help anyways... he'll be fine"
+m "Thanks, but I'm fine. I have sensei's credit card."
     "yuji on the other hand..."
     $ megupoint = True
     jump option_1
@@ -34,5 +51,7 @@ label help_kugisaki:
     "better worry about someone else"
     $ kugipoint = True
     jump option_1
+
+
 label end:
     return
