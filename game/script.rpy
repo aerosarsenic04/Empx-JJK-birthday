@@ -1,4 +1,9 @@
-﻿define e = Character("Mook")
+﻿define e = Character("Mook", color="#3e883e")
+define yu = Character("Yuji", color="#f3aebf")
+define m = Character("Megumi", color="#0e1252")
+define k = Character("Kugisaki", color="#f09124")
+define go = Character("Gojo", color="#ff0000")
+
 define kugipoint = False
 define megupoint = False
 
