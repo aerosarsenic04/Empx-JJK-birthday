@@ -3,15 +3,36 @@ define yu = Character("Yuji", color="#f3aebf")
 define m = Character("Megumi", color="#0e1252")
 define k = Character("Kugisaki", color="#f09124")
 define go = Character("Gojo", color="#ff0000")
+image mook = "mook.png"
 
 define kugipoint = False
 define megupoint = False
 
+#!SECTION Defines and vars
 
 
 label start:
     $ megupoint = False
     $ kugipoint = False
+
+
+
+
+
+
+
+#!SECTION Start of the game
+
+
+show mook at left
+
+
+
+
+
+
+
+
 e "Hey, looks like it's your birthday!"
 e "or, maybe it isn't. That's okay too!"
 "so, looks like you're here to... celebrate, huh?"
