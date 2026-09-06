@@ -8,9 +8,8 @@ image mook = "mook.png"
 define kugipoint = False
 define megupoint = False
 
-#SECTION Defines and vars
 
-#SECTION Start of the game
+
 label start:
     $ megupoint = False
     $ kugipoint = False
@@ -29,7 +28,7 @@ menu option_1:
         jump help_megumi
     "Help kugisaki" if kugipoint == False:
         jump help_kugisaki
-
+# not me genuinely forgetting renpy syntax and having to relearn again sighs
 
 label help_yuji:
     "he's helpless"
@@ -42,9 +41,9 @@ label help_yuji:
     yu "And maybe we can finish up at Takeshita street"
     yu "You know, Harajuku!"
 
-    yu "oh, looks like we only have a few hours left... the party starts at 6"
-    yu "let's get going!"
-    yu "Oh, by the way, I only have ¥15,000 to spend..."
+yu "oh, looks like we only have a few hours left... the party starts at 6"
+yu "let's get going!"
+yu "Oh, by the way, I only have ¥15,000 to spend..."
 
     "You head to Ginza via subway"
     "It is currently 2PM"
