@@ -8,7 +8,7 @@ image mook = "mook.png"
 define kugipoint = False
 define megupoint = False
 
-
+#SECTION - GAME START
 
 label start:
     $ megupoint = False
@@ -62,7 +62,18 @@ menu option_game:
 label scene_subwindow:
     "You look out the subway window... and see nothing"
 
+label brainrot:
+    "You slide out your phone and pull up Instagram..."
+    "It doesn't take long before the typical brainrot on your FYP floods your screen"
+    "You find yourself laughig ominusly at random memes."
+    "You garner a few odd stares, but nothing can come between you and your memes"
 
+    call screen instagram_memes #TODO - Build the meme screen! make scrollable.
+
+    "After a long while, you arrive at Tokyo station and wake Yuji up so you can transfer to the Ginza line."
+    
+
+#SECTION - Start stuff
 label help_megumi:
     "... You really thought megumi would need your help?"
     "nah, he doesn't want help anyways... he'll be fine"
