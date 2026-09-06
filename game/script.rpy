@@ -41,9 +41,9 @@ label help_yuji:
     yu "And maybe we can finish up at Takeshita street"
     yu "You know, Harajuku!"
 
-yu "oh, looks like we only have a few hours left... the party starts at 6"
-yu "let's get going!"
-yu "Oh, by the way, I only have ¥15,000 to spend..."
+    yu "oh, looks like we only have a few hours left... the party starts at 6"
+    yu "let's get going!"
+    yu "Oh, by the way, I only have ¥15,000 to spend..."
 
     "You head to Ginza via subway"
     "It is currently 2PM"
