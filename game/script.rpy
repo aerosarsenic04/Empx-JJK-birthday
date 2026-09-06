@@ -8,34 +8,18 @@ image mook = "mook.png"
 define kugipoint = False
 define megupoint = False
 
-#!SECTION Defines and vars
+#SECTION Defines and vars
 
-
+#SECTION Start of the game
 label start:
     $ megupoint = False
     $ kugipoint = False
 
 
-
-
-
-
-
-#!SECTION Start of the game
-
-
-show mook at left
-
-
-
-
-
-
-
-
-e "Hey, looks like it's your birthday!"
-e "or, maybe it isn't. That's okay too!"
-"so, looks like you're here to... celebrate, huh?"
+    show mook at left
+    e "Hey, looks like it's your birthday!"
+    e "or, maybe it isn't. That's okay too!"
+    "so, looks like you're here to... celebrate, huh?"
 
 "Help the students prepare for gojo's birthday party!"
 menu option_1:
@@ -52,21 +36,38 @@ label help_yuji:
     "he might be a great and thoughtful guy, but he sure is indecisive."
     "mind gving him a hand? (you have no choice)"
 
-yu "Hey, thanks for helping me out! I can't really decide what to get gojo-sensei"
-yu "Huh? Why don't Kugisaki and Fushiguro help? They already know what to get and I want to get something unique!"
-yu "I was thinking of heading to Ginza to check stuff out!"
-yu "And maybe we can finish up at takeshita street"
-yu "You know, harajuku!"
+    yu "Hey, thanks for helping me out! I can't really decide what to get gojo-sensei"
+    yu "Huh? Why don't Kugisaki and Fushiguro help? They already know what to get and I want to get something unique!"
+    yu "I was thinking of heading to Ginza to check stuff out!"
+    yu "And maybe we can finish up at Takeshita street"
+    yu "You know, Harajuku!"
 
-yu "oh, looks like we only have a few hours left... the party starts at 6"
-yu "let's get going!"
-yu "Oh, by the way, I only have ¥15,000 to spend..."
+    yu "oh, looks like we only have a few hours left... the party starts at 6"
+    yu "let's get going!"
+    yu "Oh, by the way, I only have ¥15,000 to spend..."
 
     "You head to Ginza via subway"
+    "It is currently 2PM"
+
+    "Yuji snoozes off on the subway, since the ride from the outskirts of Tokyo to Ginza is a long one."
+    "You decide to pass the time by..."
+
+menu option_game:
+    "Play chess":
+        jump play_chess #I just know this is gonna be a huge pain BUT it would be funny so...
+    "Look out the window":
+        jump scene_subwindow
+    "Look at memes on Instagram":
+        jump brainrot
+
+label scene_subwindow:
+    "You look out the subway window... and see nothing"
+
+
 label help_megumi:
     "... You really thought megumi would need your help?"
     "nah, he doesn't want help anyways... he'll be fine"
-m "Thanks, but I'm fine. I have sensei's credit card."
+    m "Thanks, but I'm fine. I have sensei's credit card."
     "yuji on the other hand..."
     $ megupoint = True
     jump option_1
